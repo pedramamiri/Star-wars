@@ -1,0 +1,41 @@
+.canvas{
+    width: 95vw;
+    height: 30vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.logo{
+    z-index: 0;
+    width:60%;
+    z-index: -1;
+    height: auto;
+}
+.Header{
+    width: 80%;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .logo{
+        width:90%;
+    }
+} 
+@media only screen and (min-width: 600px) {
+    .logo{
+        width:80%;
+    }
+} 
+@media only screen and (min-width: 768px) {
+    .logo{
+        width:70%;
+    }
+} 
+@media only screen and (min-width: 1200px) {
+    .logo{
+        width:50%;
+    }
+}
+
+
+

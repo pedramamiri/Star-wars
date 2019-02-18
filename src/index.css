@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  
+}
+
+@font-face {
+  font-family: Startjedi;
+  font-style: normal;
+  src: local('Starjedi'),url(./assets/fonts/Starjedi.ttf) format('truetype');
+}
+@font-face {
+  font-family: Starjout;
+  font-style: normal;
+  src: local('Starjout'),url(./assets/fonts/Starjout.ttf) format('truetype');
+}
+
+* {
+  font-family: Startjedi;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

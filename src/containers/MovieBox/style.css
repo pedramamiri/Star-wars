@@ -1,0 +1,162 @@
+.MovieBox{
+    width: 50%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column; 
+    top:15vh;
+    z-index: 0;
+}
+.topSide{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.topLeftSide{
+    width: 20%;
+    height: 1vw;
+    margin-right: 5%;
+    background-color: rgb(229,17,21);
+    opacity: 0;
+    border-radius:3px;
+    filter: blur(1px) brightness(300%) contrast(300%) drop-shadow(2px 2px 4px  rgb(229,17,21));
+    transition-duration: 1s;
+    transition-property: opacity;
+    transition-timing-function:ease;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffe81f;
+    box-shadow:2px 3px 10px #ffe81f;
+    filter: brightness(200%) contrast(200%);
+    border-radius: 5px;
+}
+.button:active {
+    border: 5.5px solid #f7de01;
+    box-shadow:2px 3px 10px #ffee56;
+    filter: brightness(300%) contrast(300%);
+}
+.button span{
+    font-size: 2vw
+}
+.battery{
+    transform: rotate(90deg);
+    width: 15%;
+    height: auto;
+}
+.topRightSide{
+    width: 20%;
+    height: 1vw;
+    margin-left: 5%;
+    opacity: 0;
+    background-color: rgb(229,17,21);
+    border-radius: 3px;
+    filter: blur(1px) brightness(300%) contrast(300%) drop-shadow(2px 2px 4px  rgb(229,17,21));
+    transition-duration: 1s;
+    transition-property: opacity;
+    transition-timing-function:ease;
+}
+.mainSide{
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition-delay: 0.9s;
+    transition-duration: 0.5s;
+    transition-property: height;
+    transition-timing-function:ease;
+}
+.rightSide{
+    width: 1vw;
+    height: auto;
+    background-color: rgb(229,17,21);
+    border-radius: 3px;
+    filter: blur(1.5px) brightness(300%) contrast(300%) drop-shadow(2px 6px 4px  rgb(229,17,21))
+}
+.leftSide{
+    width: 1vw;
+    height: auto;
+    background-color: rgb(229,17,21);
+    border-radius:3px;
+    filter: blur(1.5px) brightness(300%) contrast(300%) drop-shadow(2px 6px 4px  rgb(229,17,21))
+}
+.openMainSide{
+    height: fit-content;
+}
+.showTopSide{
+    opacity:1;
+}
+.movieNames{
+    width: 80%;
+    list-style: none;
+    padding: 0;
+}
+.movieNames li{
+    padding-top: 20px;
+    font-size: 1.3vw;
+    letter-spacing: 1.1px;
+}
+.movieNames li a{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .MovieBox{
+        width: 80%;
+    }
+    .movieNames li{
+        font-size: 2.5vw;
+    }
+    .button span{
+        font-size: 3vw
+    }
+} 
+@media only screen and (min-width: 600px) {
+    .MovieBox{
+        width: 60%;
+    }
+    .movieNames li{
+        font-size: 2.2vw;
+    }
+} 
+@media only screen and (min-width: 768px) {
+    .movieNames li{
+        font-size: 2vw;
+    }
+   
+} 
+@media only screen and (min-width: 1000px) {
+    .MovieBox{
+        width: 50%;
+    }
+    .movieNames li{
+        font-size: 1.7vw;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .movieNames li{
+        font-size: 1.7vw;
+    }
+    .button span{
+        font-size: 1.7vw
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .movieNames li{
+        padding-top: 15px;
+    }
+    .MovieBox{
+       top:20vh
+    }
+}

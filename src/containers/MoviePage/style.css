@@ -1,0 +1,48 @@
+.MoviePage ul{
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  padding: 0;
+  border-top: 1px solid #ffe81f;
+  box-shadow:2px 3px 10px #ffe81f;
+  filter: brightness(200%) contrast(200%);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.MoviePage li{
+  padding: 2px;
+  font-size: 1vw;
+}
+.MoviePage p{
+  font-size: 3vw;
+  font-family: Starjout;
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .MoviePage li{
+    font-size: 2.2vw;
+  }
+} 
+@media only screen and (min-width: 600px) {
+  .MoviePage li{
+    font-size: 1.8vw;
+  }
+} 
+@media only screen and (max-width: 750px) {
+  .MoviePage{
+    position: relative;
+    top: 11vh;
+    z-index: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .MoviePage li{
+    font-size: 1.7vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .MoviePage li{
+    font-size: 1.3vw;
+  }
+}
